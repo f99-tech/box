@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>RingBeat — نبض الحلبة</title>
+  <!-- RINGBEAT FLAT ROOT v4 — files live next to this html, not in css/ or js/ -->
+  <meta name="description" content="تدريب ملاكمة ومواي تاي وكيك بوكسينغ مع مؤقّت جولات وجرس حلبة ونزالات UFC." />
+  <meta name="theme-color" content="#070708" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="RingBeat" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-192.png" type="image/png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <style>
+    html,body{margin:0;background:#070708;color:#f4f1ea;min-height:100%}
+    .skip{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+    .skip:focus{position:static;width:auto;height:auto;clip:auto;padding:8px}
+  </style>
+  <link rel="stylesheet" href="app.css?v=4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=IBM+Plex+Sans+Arabic:wght@400;600&family=Oswald:wght@500;600&display=swap" />
+</head>
+<body>
+  <a class="skip" href="#app">تخطَّ إلى المحتوى</a>
+  <div class="ambient" id="ambient" aria-hidden="true">
+    <div class="ambient-img"></div>
+    <canvas id="dust"></canvas>
+    <div class="vignette"></div>
+  </div>
+  <div id="live" class="live" aria-live="polite"></div>
+  <main id="app" class="shell"></main>
+  <script src="data.js?v=4"></script>
+  <script src="fights.js?v=4"></script>
+  <script src="app.js?v=4"></script>
+</body>
+</html>
